@@ -1,0 +1,82 @@
+
+body {
+  font-weight: 200;
+  font-size: 16px; 
+  line-height: 2.1;/*这里是设置右边的行高*/
+  color: white;
+  /*其余属性是用来设置左边的文字属性*/
+  
+}
+
+#page {
+  overflow-x: scroll;/*裁剪右边图片多余的部分，不让其显示*/
+  width: 100%;
+  height: 100%;/*设置左边区域的大小*/
+}
+
+
+
+#f {
+  width: 40%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  position: fixed;/*设置左边图片的大小和位置*/
+  height: 100%;
+  background-size: cover;/*缩放左边的背景图像，让其足够大能够完全覆盖之前设置的背景区域*/
+  background-repeat: no-repeat;
+  background-position: center center;/*全是对左边背景图像设置相关属性*/
+
+}
+
+#f .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.5);/*设置颜色为黑色，半透明*/
+}
+#f .featured,  #f .page-title {
+  z-index: 12;/*要比前面的10更大，才能显示成白色*/
+  position: absolute;
+  bottom: 0;
+  padding: 30px;
+}/*设置的是左边文字的样式*/
+
+
+#f1 {
+  margin-left: 45%;
+  position: relative;
+  
+}/*设置的是左边文字的格式*/
+
+.padding {
+  padding: 50px;
+}/*为了设置左边各个盒子之间的距离*/
+
+
+.f2 .f3 > div a:hover {
+  color: grey;
+}
+/*设置当鼠标悬停链接时的颜色*/
+.f2 .f3 > div a{
+  color: black;
+  text-decoration: none;
+}
+/*设置链接的样式*/
+.f2 .f3 > div h2 {
+  margin-bottom: 10px;
+
+}
+/*设置各个标题之间的距离*/
+
+.f2 .f3 > div p {
+  margin-bottom: 0;
+  color: black;
+}
+/*设置文字的样式*/
+
+
+
